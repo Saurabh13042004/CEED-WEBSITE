@@ -27,6 +27,145 @@
     <link rel="stylesheet" href="about us/css/vendor/animate.min.css">
     <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
+
+   
+  <style>
+.customer-logos {
+  background-color: #ffffff;
+}
+
+/* Slider */
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+.slide{
+
+  height: 150px;
+
+}
+
+
+  </style>
+
   </head>
 
 <body>
@@ -633,41 +772,21 @@
         </div>
         
       </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-          <div class="collab-img w-75 bg-white h-100  d-flex justify-content-center align-items-center rounded-2 p-3 ">
-            <img src="assets/images/Collaborations/100x.svg" alt="" class="img-fluid" >
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-          <div class="collab-img w-75 bg-white h-100 d-flex justify-content-center align-items-center rounded-2 p-3 ">
-            <img src="assets/images/Collaborations/Chandigarh_emblem.png" alt="" class="img-fluid " >
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-          <div class="collab-img w-75 bg-white h-100 d-flex justify-content-center align-items-center rounded-2 p-3 ">
-            <img src="assets/images/Collaborations/Dept. of science and technology.png" alt="" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-          <div class="collab-img  w-75 bg-white h-100 d-flex justify-content-center align-items-center rounded-2 p-3 ">
-            <img src="assets/images/Collaborations/meity.svg" alt="" class="img-fluid" >
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-          <div class="collab-img   w-75 bg-white h-100 d-flex justify-content-center align-items-center rounded-2 p-3 ">
-            <img src="assets/images/Collaborations/startup himachal (1).png" alt="" class="img-fluid h-100 w-75" >
-          </div>
-        </div>
-     
-        <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-          <div class="collab-img   w-75 bg-white h-100 d-flex justify-content-center align-items-center rounded-2 p-3 ">
-            <img src="assets/images/Collaborations/T-Hub_Logo-PNG.png" alt="" class="img-fluid" >
-          </div>
-        </div>
+      <div class="customer-logos d-flex align-items-center justify-content-between justify-content-center">
+        <div class="slide d-flex p-4  align-items-center justify-content-center "><img src="assets/images/Collaborations/100x.svg" class="img-fluid  "></div>
+        <div class="slide d-flex p-4 align-items-center justify-content-center"><img src="assets/images/Collaborations/Chandigarh_emblem.png" class="img-fluid w-50"></div>
+        <div class="slide d-flex p-4 align-items-center justify-content-center"><img src="assets/images/Collaborations/Dept. of science and technology.png" class="img-fluid  "></div>
+        <div class="slide d-flex p-4 align-items-center justify-content-center"><img src="assets/images/Collaborations/meity.svg" class="img-fluid "></div>
+        <div class="slide d-flex p-4 align-items-center justify-content-center"><img src="assets/images/Collaborations/startup himachal (1).png" class="img-fluid w-50"></div>
+        <div class="slide d-flex p-4 align-items-center justify-content-center"><img src="assets/images/Collaborations/T-Hub_Logo-PNG.png" class="img-fluid "></div>
+
       </div>
+              
+    
     </div>
   </section>
+
+
   <section class="contact-us" id="contact">
 
     <div class="container">
@@ -889,7 +1008,7 @@
     $('.customer-logos').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 1500,
     arrows: true,
     dots: false,
@@ -940,9 +1059,35 @@
         }
     })
 });
-    </script>
 
-   
+
+
+    </script>
+  <!-- <script>
+$(document).ready(function(){
+			$('.customer-logos').slick({
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 1000,
+				arrows: false,
+				dots: false,
+					pauseOnHover: false,
+					responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 3
+					}
+				}, {
+					breakpoint: 520,
+					settings: {
+						slidesToShow: 2
+					}
+				}]
+			});
+		});
+      </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 
